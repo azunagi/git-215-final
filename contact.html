@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Glorious Crown Resort | Contact</title>
+        <meta name="author" content="Alyssa Yrojo">
+        <meta name="description" content="Take a trip to our resort in the Swiss Alps! Leave us a comment, phone and email address on our contact form for more information. Dine at an Italian restaurant, go to a ski-in bar on mountainside terraces, and much more. Take a look at our upscale spa, hot tubs, gym and climbing wall.">
+
+        <!-- Favicon -->
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+        <!-- Google Font Links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+        
+        <!-- link to stylesheet -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1><a href="index.html">Glorious Crown Resort</a></h1>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Accommodations</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="images/swiss-valley.jpg" alt="A view of the Swiss valley" width="1440" height="560">
+        </header>
+        <main>
+            <!-- div container for styling text in grid -->
+            <div class="contact-start">
+                <h2>Contact Us</h2>
+                <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!
+                Required fields marked with a *</p>
+            </div>
+
+            <img src="images/swiss-sunset.jpg" alt="The resort during sunset time, with trees, houses, a river and mountains in the distance" width="710" height="270" id="sunset">
+            <form action=" https://wp.zybooks.com/form-viewer.php" method="POST">
+                <!-- div container for styling in grid -->
+                <div class="name-style">
+                    <label for="my-name">Full Name:<span class="required">*</span></label>
+                    <input type="text" name="my-name" id="my-name" required>
+                </div>
+
+                <!-- div container for styling in grid -->
+                <div class="email-style">
+                    <label for="my-email">Email Address:<span class="required">*</span></label>
+                    <input type="email" name="my-email" id="my-email" required>
+                </div>
+
+                <!-- div container for styling in grid -->
+                <div class="phone-style">
+                    <label for="my-phone">Phone:<span class="required">*</span></label>
+                    <input type="tel" name="my-phone" id="my-phone" required>
+                </div>
+
+                <fieldset>
+                    <legend>Preferred Contact Method</legend>
+
+                    <input type="radio" name="contact-pref" id="pref-email" required>
+                    <label for="pref-email">Email</label>
+    
+                    <input type="radio" name="contact-pref" id="pref-phone" required>
+                    <label for="pref-phone">Phone</label>
+                </fieldset>
+
+                <!-- div container for styling in grid -->
+                <div class="comment-style">
+                    <label for="my-comments">Comments:<span class="required">*</span></label>
+                    <textarea name="my-comments" id="my-comments" required></textarea>
+                </div>
+
+                <input type="submit" name="my-submit" id="my-submit">
+            </form>
+        </main>
+        <footer>
+            <p>Copyright &copy;2023 - Glorious Crown Resort</p>
+            <p>This site is for educational purposes only</p>
+        </footer>
+    </body>
+</html>
